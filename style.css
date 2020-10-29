@@ -158,7 +158,7 @@ input{
 #formdate,#formtime{
 	width: 15vw;
 }
-#formtime:invalid{
+input:invalid{
 	background-color: #f00;
 }
 #formnpessoas{
@@ -201,6 +201,9 @@ input{
 	float: right;
 	text-align: center;
 	box-shadow: 0px 0px 20px #555; 
+}
+ul{
+	list-style: none;
 }
 .ctitulo{
 	margin-top: -4px;
