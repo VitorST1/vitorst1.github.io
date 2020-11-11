@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Restaurante Ringo - Reservas</title>
 		<meta name="author" content="Vitor Turqueti">
 		<meta name="description" content="Restaurante Ringo - Uma festa para o seu paladar">
@@ -15,43 +16,55 @@
 		<header>
 			<div id="navbar2">
 				<div class="navlink" id="name"><a href="index.html?v=1">Ringo</a></div>
-				<div class="active navlink right" id=""><a href="reservas.html?v=1">Reservas</a></div>
-				<div class="navlink right" id=""><a href="cardapio.html?v=1">Cardápio</a></div>
+				<div class="active navlink right"><a href="reservas.html?v=1">Reservas</a></div>
+				<div class="navlink right"><a href="cardapio.html?v=1">Cardápio</a></div>
 			</div>
 		</header>
-		<section>
+		<section id="section2">
 			<div id="reserva">
 				<div id="treserva">Faça sua reserva</div>
 				<p>Reserve com antecedência e garanta seu lugar</p>
 			</div>
 			<form>
-				<input type="text" name="name" id="formname" placeholder="Nome">
-				<input type="tel" name="phone" id="formphone" placeholder="Telefone"> <br>
-				<input type="date" name="date" id="formdate" min="2020-10-22" placeholder="Data">
-				<input type="time" name="time" id="formtime" min="08:00" max="21:00" placeholder="Hora"><br>
-				<input type="number" name="npessoas" id="formnpessoas" min="1" max="12" placeholder="Nº de pessoas"> <br>
-				<textarea name="obs" id="formobs" placeholder="Observações"></textarea> <br>
+				<div>
+					<span>
+						<input type="text" name="name" id="formname" placeholder="Nome">
+					</span>
+					<input type="tel" name="phone" id="formphone" placeholder="Telefone">
+				</div>
+				<div>
+					<span>
+						<input type="date" name="date" id="formdate" min="2020-11-20" placeholder="Data">
+					</span>
+					<input type="time" name="time" id="formtime" min="08:00" max="21:00" placeholder="Hora">
+				</div>
+				<div>
+					<input type="number" name="npessoas" id="formnpessoas" min="1" max="12" placeholder="Nº de pessoas">
+				</div>
+				<div>
+					<textarea name="obs" placeholder="Observações"></textarea>
+				</div>
 				<input type="submit" name="reservar" id="formbutton" value="Reservar"> 
 			</form>
 		</section>
-		<footer id="f">
+		<footer id="footer2">
 			<div class="fcontent">
 				<div class="ftitulo">Endereço</div>
-				<div class="ftexto">
+				<div>
 					Rua Lorem, 99, Ipsum <br>
 					Barbacena-MG
 				</div>
 			</div>
 			<div class="fcontent">
 				<div class="ftitulo">Horário de Funcionamento</div>
-				<div class="ftexto">
+				<div>
 					Segunda a Sábado <br>
 					Das 08:00 às 22:00
 				</div>
 			</div>
 			<div class="fcontent">
 				<div class="ftitulo">Contato</div>
-				<div class="ftexto">
+				<div>
 					(XX) XXXX-XXXX <br>
 					ringo@fakemail.fake
 				</div>
