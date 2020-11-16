@@ -230,6 +230,32 @@ footer{
 .ftitulo ~ div{
 	margin-top: 10px;
 }
+#fbutton{
+	float: right;
+	color: #C86400;
+	text-decoration: none;
+	font-size: 1.2em;
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	display: inline-block;
+	text-align: center;
+	line-height: 50px;
+	margin-top: 55px;
+	margin-right: 5vw;
+	border: 2px solid #C86400;
+}
+#fbutton:hover{
+	color: #111;
+	background-color: #C86400;
+}
+@media(max-width: 850px){
+	#fbutton{
+		margin-top: 0;
+		margin-right: calc(50% - (50px/2));
+		margin-bottom: 10px;
+	}
+}
 @media(max-width: 768px){
 	.fcontent{
 		margin: 5vh;
