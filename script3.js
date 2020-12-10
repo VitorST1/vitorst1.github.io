@@ -8,11 +8,24 @@
 	    horario.style.color = "#e74c3c";
 	}
 
-///Form
- // Validar telefone 
-	var telefone = document.querySelector("#formphone");
-	var regex = new RegExp('^[1-9]{2}[0-9][0-9]{7,8}$'); 
-	if (regex.test(telefone.value)) { 
-		 telefone.setCustomValidity("");
+///Form 
+	var formbutton = document.querySelector("#formbutton");
+	var formmsg = document.querySelector("#formmsg");
+	var formmsg2 = document.querySelector("#formmsg2");
+
+ // Nome precisa ter mais de 2 caracteres
+ 	var nome = document.querySelector("#formname");
+
+ 	formbutton.onclick = function(){
+	 	if(nome.value.length < 3 & nome.value != 0){
+	 		formmsg.textContent = "Nome precisa ter 3 caracteres ou mais";
+	 		formmsg.style.display = "block";
+	 	}else{
+	 		formmsg.style.display = "none";
+	 	}
 	}
-	else telefone.setCustomValidity("Digite um número válido. Ex: dd988888888");
+
+ // Indica que a reserva foi concluída
+ 	function fsubmit(){
+ 		alert("Reserva concluída");
+ 	}

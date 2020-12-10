@@ -27,14 +27,14 @@
 				<div id="treserva">Faça sua reserva</div>
 				<p>Reserve com antecedência e garanta seu lugar</p>
 			</div>
-			<form>
+			<form onsubmit="fsubmit()">
 				<div>
 					<span>
 						<span class="mobiletxt">Nome:</span>
-						<input type="text" name="name" id="formname" placeholder="Nome" required>
+						<input type="text" name="name" id="formname" minlength="3" placeholder="Nome" required>
 					</span>
 					<span class="mobiletxt">Telefone:</span>
-					<input type="tel" name="phone" id="formphone" placeholder="Telefone" pattern="^[1-9]{2}[0-9][0-9]{7,8}$" required>
+					<input type="tel" name="phone" id="formphone" minlength="8" placeholder="Telefone" required>
 				</div>
 				<div>
 					<span>
@@ -54,6 +54,8 @@
 				</div>
 				<input type="submit" name="reservar" id="formbutton" value="Reservar"> 
 			</form>
+			<div id="formmsg"></div>
+			<div id="formmsg2"></div>
 		</section>
 		<footer id="footer2">
 			<div class="fcontent">
