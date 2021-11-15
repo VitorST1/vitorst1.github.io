@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Restaurante Ringo - Reservas</title>
+		<meta name="author" content="Vitor Turqueti">
+		<meta name="description" content="Restaurante Ringo - Uma festa para o seu paladar">
+		<meta name="keywords" content="Restaurante, comida, bebida, sobremesa, ringo">
+		<meta name="robots" content="index, follow">
+		<link rel="stylesheet" type="text/css" href="style.css?v=1">
+		<link rel="shortcut icon" href="favicon.ico">
+		<link href="https://fonts.googleapis.com/css2?family=Oswald&family=PT+Sans+Caption&family=Open+Sans&display=swap" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/a685e3ddf0.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<header id="header">
+			<div id="navbar2">
+				<div class="navlink" id="name"><a href="index.html?v=2">Ringo</a></div>
+				<div class="active navlink right"><a href="reservas.html?v=2">Reservas</a></div>
+				<div class="navlink right"><a href="cardapio.html?v=2">Cardápio</a></div>
+				<div class="right" id="horario">Aberto</div>
+			</div>
+		</header>
+		<section id="section2">
+			<div id="reserva">
+				<div id="treserva">Faça sua reserva</div>
+				<p>Reserve com antecedência e garanta seu lugar</p>
+			</div>
+			<form onsubmit="fsubmit()">
+				<div>
+					<span>
+						<span class="mobiletxt">Nome:</span>
+						<input type="text" name="name" id="formname" minlength="3" placeholder="Nome" required>
+					</span>
+					<span class="mobiletxt">Telefone:</span>
+					<input type="tel" name="phone" id="formphone" minlength="8" placeholder="Telefone" required>
+				</div>
+				<div>
+					<span>
+						<span class="mobiletxt">Data:</span>
+						<input type="date" name="date" id="formdate" min="2020-12-10" placeholder="Data" required>
+					</span>
+					<span class="mobiletxt">Hora:</span>
+					<input type="time" name="time" id="formtime" min="08:00" max="21:00" placeholder="Hora" required>
+				</div>
+				<div>
+					<span class="mobiletxt">Nº de pessoas:</span>
+					<input type="number" name="npessoas" id="formnpessoas" min="1" max="12" placeholder="Nº de pessoas" required>
+				</div>
+				<div>
+					<span class="mobiletxt">Observações:</span>
+					<textarea name="obs" placeholder="Observações"></textarea>
+				</div>
+				<input type="submit" name="reservar" id="formbutton" value="Reservar"> 
+			</form>
+			<div id="formmsg"></div>
+			<div id="formmsg2"></div>
+		</section>
+		<footer id="footer2">
+			<div class="fcontent">
+				<div class="ftitulo">Endereço</div>
+				<div>
+					Rua Lorem, 99, Ipsum <br>
+					Barbacena-MG
+				</div>
+			</div>
+			<div class="fcontent">
+				<div class="ftitulo">Horário de Funcionamento</div>
+				<div>
+					Segunda a Sábado <br>
+					Das 08:00 às 22:00
+				</div>
+			</div>
+			<div class="fcontent">
+				<div class="ftitulo">Contato</div>
+				<div>
+					(XX) XXXX-XXXX <br>
+					ringo@fakemail.fake
+				</div>
+			</div>
+			<a href="#header" id="fbutton">
+				<i class="fas fa-arrow-up"></i>
+			</a>	
+		</footer>
+		<script type="text/javascript" src="script3.js"></script>
+	</body>
+</html>
